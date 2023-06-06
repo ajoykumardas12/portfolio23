@@ -2,4 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+    .text-name{
+        font-size: clamp(30px, 8vw, 80px);
+    }
+    p{
+        font-size: 1.15rem;
+    }
+    .social-icon{
 
+    }
+    .social-icon:hover{
+        stroke: #01C8EF;
+    }
+    @media only screen and (max-width: 768px){
+        
+    }
+    @media only screen and (max-width: 640px){
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    @media only screen and (max-width: 460px){
+        p{
+            font-size: 1rem;
+        }
+    }
+}
