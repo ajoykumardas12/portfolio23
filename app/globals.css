@@ -3,41 +3,46 @@
 @tailwind utilities;
 
 @layer utilities {
-	/* Scrollbar */
-	html {
-		scrollbar-width: thin;
-		scrollbar-color: #495670 #0a192f;
-	}
-	::-webkit-scrollbar {
-		width: 12px;
-	}
-	::-webkit-scrollbar-track {
-		background: #0a192f;
-	}
-	::-webkit-scrollbar-thumb {
-		background-color: #495670;
-		border: 3px solid #0a192f;
-		border-radius: 10px;
-	}
-	.text-name {
-		font-size: clamp(30px, 8vw, 80px);
-	}
-	p {
-		font-size: 1.15rem;
-	}
-	.social-icon:hover {
-		stroke: #01c8ef;
-	}
-	@media only screen and (max-width: 768px) {
-	}
-	@media only screen and (max-width: 640px) {
-		p {
-			font-size: 1.1rem;
-		}
-	}
-	@media only screen and (max-width: 460px) {
-		p {
-			font-size: 1rem;
-		}
-	}
+  /* Scrollbar */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #495670 #0a192f;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a192f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #495670;
+    border: 3px solid #0a192f;
+    border-radius: 10px;
+  }
+  .text-name {
+    font-size: clamp(30px, 8vw, 80px);
+    font-weight: 700;
+  }
+  .section-heading {
+    font-size: clamp(26px, 5vw, 32px);
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.15rem;
+  }
+  .social-icon:hover {
+    stroke: #01c8ef;
+  }
+  @media only screen and (max-width: 768px) {
+  }
+  @media only screen and (max-width: 640px) {
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    p {
+      font-size: 1rem;
+    }
+  }
 }
