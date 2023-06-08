@@ -72,7 +72,7 @@ function Skills() {
                 key={name}
                 className="grid-item group border border-transparent hover:border-light/40 transition duration-500"
               >
-                <div className="saturate-[0.25] group-hover:saturate-100">
+                <div className="saturate-[0.45] group-hover:saturate-100">
                   <Icon />
                 </div>
                 {name}
