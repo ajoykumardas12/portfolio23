@@ -1,13 +1,13 @@
-import CSSIcon from "./icons/skills/CSSIcon";
-import Git from "./icons/skills/Git";
-import Java from "./icons/skills/Java";
-import JavaScript from "./icons/skills/JavaScript";
-import NextJS from "./icons/skills/NextJS";
-import NodeJS from "./icons/skills/NodeJS";
-import ReactIcon from "./icons/skills/ReactIcon";
-import TailwindCSS from "./icons/skills/TailwindCSS";
-import TypeScript from "./icons/skills/TypeScript";
-import VSCode from "./icons/skills/VSCode";
+import CSSIcon from "../icons/skills/CSSIcon";
+import Git from "../icons/skills/Git";
+import Java from "../icons/skills/Java";
+import JavaScript from "../icons/skills/JavaScript";
+import NextJS from "../icons/skills/NextJS";
+import NodeJS from "../icons/skills/NodeJS";
+import ReactIcon from "../icons/skills/ReactIcon";
+import TailwindCSS from "../icons/skills/TailwindCSS";
+import TypeScript from "../icons/skills/TypeScript";
+import VSCode from "../icons/skills/VSCode";
 
 const skillItems = [
   { name: "JavaScript", Icon: JavaScript },
@@ -51,7 +51,7 @@ const skillItems = [
 
 function Skills() {
   return (
-    <div className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center">
+    <section className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center">
       <h2 className="section-heading mb-5">
         <span className="text-highlight">#</span> My Skills
       </h2>
@@ -81,7 +81,7 @@ function Skills() {
           })}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 
