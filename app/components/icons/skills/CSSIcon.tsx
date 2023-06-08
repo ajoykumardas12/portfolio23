@@ -6,6 +6,7 @@ function CSSIcon() {
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="skills-icon"
     >
       <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8" />
       <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD" />

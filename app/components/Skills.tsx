@@ -28,7 +28,7 @@ const skillItems = [
     Icon: CSSIcon,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     Icon: TailwindCSS,
   },
   {
@@ -51,7 +51,7 @@ const skillItems = [
 
 function Skills() {
   return (
-    <div className="w-[87%] xs:w-[85%] sm:w-[78%] lg:w-[72%] xl:w-8/12 py-20 flex flex-col justify-center">
+    <div className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center">
       <h2 className="section-heading mb-5">
         <span className="text-highlight">#</span> My Skills
       </h2>
@@ -60,11 +60,12 @@ function Skills() {
         in blogger where I first experienced few bits of magic of CSS. Since
         then my skills have grown as I kept exploring.
       </p>
-      <p className="text-lg mb-6">
+      <p className="text-base sm:text-lg mb-6">
         Here are a few technologies of I enjoy working with:
       </p>
-      <div className="">
-        <ul className="grid-container gap-5">
+      <div className="text-[0.8rem] sm:text-[0.9rem]">
+        <ul className="grid-container">
+          {/* TODO: Centre last row items */}
           {skillItems.map(({ name, Icon }) => {
             return (
               <li
