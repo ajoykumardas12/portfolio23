@@ -51,7 +51,10 @@ const skillItems = [
 
 function Skills() {
   return (
-    <section className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center">
+    <section
+      className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center"
+      id="skills"
+    >
       <h2 className="section-heading mb-5">
         <span className="text-highlight">#</span> My Skills
       </h2>

@@ -19,16 +19,18 @@ function Header() {
       <nav className="">
         <ul className="flex gap-10">
           <li>
-            <Link href="#">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="#">Projects</Link>
+            <a href="#projects" className="">
+              Projects
+            </a>
           </li>
           <li>
-            <Link href="#">Contact</Link>
+            <a href="#contact">Contact</a>
           </li>
           <li>
-            <Link href="#">Blog</Link>
+            <Link href="/blog">Blog</Link>
           </li>
           <li>
             <Link href="#">Resume</Link>
