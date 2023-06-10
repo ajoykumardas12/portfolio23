@@ -10,7 +10,7 @@ const eagleLake = Eagle_Lake({
 
 function Header() {
   return (
-    <header className="fixed z-10 w-full h-20 flex items-center justify-between px-20">
+    <header className="fixed z-10 w-full h-20 flex items-center justify-between px-20 bg-darkest/90 backdrop-blur-xl shadow-md">
       <div
         className={`${eagleLake.className} text-2xl font-bold tracking-widest text-highlight`}
       >
