@@ -11,7 +11,7 @@ module.exports = {
         brand: "#9282ff",
         highlight: "#01c8ef",
         darkest: "#0a192f",
-        dark: "#164e63",
+        dark: "#134659",
         mid: "#aab4c6",
         light: "#d1d8e4",
         lightest: "#fff",

@@ -1,4 +1,6 @@
-function CodeSandbox() {
+import { iconProps } from "@/app/types";
+
+function CodeSandbox({ iconClass }: iconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +12,7 @@ function CodeSandbox() {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="social-icon feather feather-codesandbox"
+      className={`${iconClass} feather feather-codesandbox`}
     >
       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
       <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>

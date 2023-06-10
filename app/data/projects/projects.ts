@@ -1,4 +1,6 @@
-const projects = [
+import { ProjectType } from "@/app/types";
+
+const projects: ProjectType[] = [
   {
     name: "QR Code Generator",
     description:
@@ -45,3 +47,5 @@ const projects = [
     imageSrc: "/images/projects/weatherlab-screenshot.png",
   },
 ];
+
+export default projects;

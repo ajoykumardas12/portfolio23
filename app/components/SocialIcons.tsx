@@ -9,24 +9,24 @@ function SocialIcons() {
     <ul className="flex gap-10">
       <li>
         <a href="">
-          <LinkedIn />
+          <LinkedIn iconClass="icon" />
         </a>
       </li>
       <li>
         <a href="">
-          <GitHub />
+          <GitHub iconClass="icon" />
         </a>
       </li>
       <li>
         <a href="">
-          <Twitter />
+          <Twitter iconClass="icon" />
         </a>
       </li>
-      <li>
+      {/* <li>
         <a href="">
           <Codepen />
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }
