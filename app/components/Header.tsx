@@ -27,13 +27,19 @@ function Header() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isHamburgerOpen]);
 
+  const { width } = useWindowReSize();
+
+  useEffect(() => {
+    if (width > 767) {
+      setIsHamburgerOpen(false);
+    }
+  }, [width]);
+
   const toggleIsHamburgerOpen = () => {
     setIsHamburgerOpen((prevValue) => {
       return !prevValue;
     });
   };
-
-  const { width } = useWindowReSize();
 
   return (
     <header
