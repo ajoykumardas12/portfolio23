@@ -61,6 +61,12 @@
     transform: rotate(-90deg) translateX(-0.12rem);
   }
 
+  /* stop transition and animations on window resize */
+  .resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
+
   .text-name {
     font-size: clamp(30px, 8vw, 80px);
     font-weight: 700;

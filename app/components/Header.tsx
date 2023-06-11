@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Eagle_Lake, Space_Grotesk, Fira_Sans } from "next/font/google";
 import { useEffect, useState } from "react";
+import useWindowReSize from "../hooks/useWindowResize";
 
 const eagleLake = Eagle_Lake({
   subsets: ["latin"],
@@ -13,10 +14,9 @@ const eagleLake = Eagle_Lake({
 function Header() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
-  const body = document.querySelector("body");
-  const main = document.querySelector("main");
-
   useEffect(() => {
+    const body = document.querySelector("body");
+    const main = document.querySelector("main");
     if (isHamburgerOpen) {
       body?.classList.add("overflow-hidden");
       main?.classList.add("blur-sm");
@@ -32,6 +32,8 @@ function Header() {
       return !prevValue;
     });
   };
+
+  const { width } = useWindowReSize();
 
   return (
     <header
