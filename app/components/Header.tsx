@@ -41,6 +41,10 @@ function Header() {
     });
   };
 
+  const navClickHamburgerClose = () => {
+    setIsHamburgerOpen(false);
+  };
+
   return (
     <header
       className={`fixed z-10 w-full h-20 flex items-center justify-between px-6  lg:px-20 bg-darkest/90 backdrop-blur-xl shadow-sm`}
@@ -58,21 +62,29 @@ function Header() {
         >
           <ul className="h-[55%] w-full flex flex-col justify-between items-center md:flex-row  md:gap-6 lg:gap-10 xl:gap-12">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={navClickHamburgerClose}>
+                Home
+              </Link>
             </li>
             <li>
-              <a href="#projects" className="">
+              <a href="#projects" onClick={navClickHamburgerClose}>
                 Projects
               </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={navClickHamburgerClose}>
+                Contact
+              </a>
             </li>
             <li>
-              <Link href="/blog">Blog</Link>
+              <Link href="/blog" onClick={navClickHamburgerClose}>
+                Blog
+              </Link>
             </li>
             <li>
-              <Link href="#">Resume</Link>
+              <Link href="#" onClick={navClickHamburgerClose}>
+                Resume
+              </Link>
             </li>
           </ul>
         </div>
