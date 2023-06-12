@@ -15,6 +15,7 @@ module.exports = {
         mid: "#aab4c6",
         light: "#d1d8e4",
         lightest: "#fff",
+        link: "#80ace0",
       },
       screens: {
         xs: "480px",

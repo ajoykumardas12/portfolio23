@@ -174,4 +174,26 @@
   .project-icon:hover {
     stroke: #01c8ef;
   }
+
+  .link {
+    display: inline-block;
+    position: relative;
+    color: #80ace0;
+  }
+  .link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #80ace0;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+  }
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
