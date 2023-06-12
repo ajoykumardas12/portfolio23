@@ -7,6 +7,6 @@ export interface ProjectType {
   imageSrc: string;
 }
 
-export interface iconProps {
+export interface IconProps {
   iconClass: string;
 }

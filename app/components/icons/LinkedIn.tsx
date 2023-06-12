@@ -1,6 +1,6 @@
-import { iconProps } from "@/app/types";
+import { IconProps } from "@/app/types";
 
-function LinkedIn({ iconClass }: iconProps) {
+function LinkedIn({ iconClass }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
