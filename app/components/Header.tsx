@@ -82,7 +82,12 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link href="#" onClick={navClickHamburgerClose}>
+              <Link
+                href="https://drive.google.com/file/d/1TVaILc8M4YYV24AwhdI840jc1PdbI6Jd/view?usp=sharing"
+                rel="noopener noreferrer"
+                target="_blank"
+                onClick={navClickHamburgerClose}
+              >
                 Resume
               </Link>
             </li>
