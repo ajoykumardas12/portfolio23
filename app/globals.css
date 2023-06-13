@@ -68,6 +68,17 @@
     transition: none !important;
   }
 
+  /* nav link */
+  .nav-link {
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+  }
+  .nav-link:hover {
+    background-color: #134659;
+    color: #01c8ef;
+  }
+
   .text-name {
     font-size: clamp(30px, 8vw, 80px);
     font-weight: 700;

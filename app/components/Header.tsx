@@ -60,32 +60,32 @@ function Header() {
       </div>
       <nav className="">
         <div
-          className={`fixed left-[20%] right-0 top-0 h-screen flex justify-center items-center px-20 bg-darkest ${
+          className={`fixed left-[20%] right-0 top-0 h-screen flex justify-center items-center px-20 bg-darkest md:bg-transparent ${
             !isHamburgerOpen && "translate-x-full"
           } transition-transform md:relative md:block md:px-0 md:h-auto md:left-0 md:translate-x-0`}
         >
-          <ul className="h-[55%] w-full flex flex-col justify-between items-center md:flex-row  md:gap-6 lg:gap-10 xl:gap-12">
-            <li>
+          <ul className="h-[55%] w-full flex flex-col justify-between items-center md:flex-row  md:gap-5 lg:gap-8 xl:gap-10 text-white/90">
+            <li className="nav-link">
               <Link href="/" onClick={navClickHamburgerClose}>
                 Home
               </Link>
             </li>
-            <li>
+            <li className="nav-link">
               <a href="#projects" onClick={navClickHamburgerClose}>
                 Projects
               </a>
             </li>
-            <li>
+            <li className="nav-link">
               <a href="#contact" onClick={navClickHamburgerClose}>
                 Contact
               </a>
             </li>
-            <li>
+            <li className="nav-link">
               <Link href="/blog" onClick={navClickHamburgerClose}>
                 Blog
               </Link>
             </li>
-            <li>
+            <li className="nav-link">
               <Link
                 href="https://drive.google.com/file/d/1TVaILc8M4YYV24AwhdI840jc1PdbI6Jd/view?usp=sharing"
                 rel="noopener noreferrer"
