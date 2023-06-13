@@ -48,7 +48,11 @@ function Header() {
   };
 
   return (
-    <header className="fixed z-10 w-full h-20 flex items-center justify-between px-6  lg:px-20 bg-darkest/90 backdrop-blur-xl shadow-sm">
+    <header
+      className={`fixed z-10 w-full h-20 flex items-center justify-between px-6  lg:px-20 ${
+        isHamburgerOpen ? "bg-darkest" : "bg-darkest/90"
+      } backdrop-blur-xl shadow-sm`}
+    >
       <div
         className={`${eagleLake.className} text-2xl font-bold tracking-widest text-highlight z-10 `}
       >
