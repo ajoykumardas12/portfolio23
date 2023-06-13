@@ -51,11 +51,11 @@ function Project(project: ProjectType) {
               </a>
             )}
           </div>
-          <div className="text-light w-full flex gap-4 justify-center text-sm">
+          <div className="text-light w-full flex gap-1 min-[320px]:gap-3 xs:gap-4 justify-center text-xs xs:text-sm">
             {project.technologies.map((technology) => {
               return (
                 <div
-                  className="px-2 py-1 rounded hover:bg-dark"
+                  className="px-2 py-1 rounded hover:bg-dark text-center"
                   key={technology}
                 >
                   {technology}
