@@ -5,6 +5,7 @@
 @layer utilities {
   /* Scrollbar */
   html {
+    scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #495670 #0a192f;
   }

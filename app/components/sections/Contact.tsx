@@ -34,7 +34,7 @@ function Contact() {
   };
   return (
     <section
-      className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20"
+      className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 pb-12"
       id="contact"
     >
       <h2 className="section-heading mb-8">
@@ -112,7 +112,7 @@ function Contact() {
               Send
             </button>
           </form>
-          <div className="mt-2 text-sm">
+          <div className="mt-4 text-sm">
             {formResponse && <SubmitResponse response={formResponse} />}
           </div>
         </div>
