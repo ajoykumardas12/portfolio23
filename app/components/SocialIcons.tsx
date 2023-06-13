@@ -8,17 +8,29 @@ function SocialIcons() {
   return (
     <ul className="flex gap-10">
       <li>
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/ajoy-kumar-das/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <LinkedIn iconClass="icon" />
         </a>
       </li>
       <li>
-        <a href="">
+        <a
+          href="https://github.com/ajoykumardas12"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <GitHub iconClass="icon" />
         </a>
       </li>
       <li>
-        <a href="">
+        <a
+          href="https://twitter.com/AjoykrDas_"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <Twitter iconClass="icon" />
         </a>
       </li>

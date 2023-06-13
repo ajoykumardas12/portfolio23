@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SocialIcons from "../SocialIcons";
 
 function Hero() {
@@ -19,9 +20,14 @@ function Hero() {
         <div className="my-10">
           <SocialIcons />
         </div>
-        <button className="px-4 py-2 text-highlight text-lg border border-highlight rounded">
+        <Link
+          href="https://drive.google.com/file/d/1TVaILc8M4YYV24AwhdI840jc1PdbI6Jd/view?usp=sharing"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="px-4 py-2 text-highlight text-lg border border-highlight rounded"
+        >
           My Resume
-        </button>
+        </Link>
       </div>
     </section>
   );
