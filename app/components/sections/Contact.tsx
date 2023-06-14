@@ -112,7 +112,7 @@ function Contact() {
             >
               Send
               <div>
-                <SendIcon iconClass="w-[18px] h-[18px] rotate-45 group-hover:stroke-brand group-hover:rotate-12 transition" />
+                <SendIcon iconClass="w-[18px] h-[18px] rotate-45 group-hover:stroke-brand group-hover:rotate-12 transition duration-200" />
               </div>
             </button>
           </form>

@@ -2,8 +2,9 @@
 import Link from "next/link";
 
 import { Eagle_Lake, Space_Grotesk, Fira_Sans } from "next/font/google";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useWindowReSize from "../hooks/useWindowResize";
+import useOnClickOutside from "../hooks/useOnOutsideClick";
 
 const eagleLake = Eagle_Lake({
   subsets: ["latin"],
@@ -47,6 +48,10 @@ function Header() {
     setIsHamburgerOpen(false);
   };
 
+  const navLinkContainerRef = useRef(null);
+
+  useOnClickOutside(navLinkContainerRef, () => setIsHamburgerOpen(false));
+
   return (
     <header
       className={`fixed z-10 w-full h-20 flex items-center justify-between px-6  lg:px-20 ${
@@ -60,6 +65,7 @@ function Header() {
       </div>
       <nav className="">
         <div
+          ref={navLinkContainerRef}
           className={`fixed left-[20%] right-0 top-0 h-screen flex justify-center items-center px-20 bg-darkest md:bg-transparent ${
             !isHamburgerOpen && "translate-x-full"
           } transition-transform md:relative md:block md:px-0 md:h-auto md:left-0 md:translate-x-0`}
