@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import CheckIcon from "../icons/CheckIcon";
 import InfoIcon from "../icons/InfoIcon";
+import SendIcon from "../icons/SendIcon";
 
 function Contact() {
   const contactForm = useRef<HTMLFormElement>(null);
@@ -107,12 +108,15 @@ function Contact() {
             ></textarea>
             <button
               type="submit"
-              className="self-start px-8 py-2 bg-dark hover:bg-dark/70 rounded transition-colors duration-200 mt-1"
+              className="self-start px-8 py-2 flex items-center gap-2 group bg-dark hover:bg-dark/70 hover:text-brand rounded transition-colors duration-200 mt-1"
             >
               Send
+              <div>
+                <SendIcon iconClass="w-[18px] h-[18px] rotate-45 group-hover:stroke-brand group-hover:rotate-12 transition" />
+              </div>
             </button>
           </form>
-          <div className="mt-4 text-sm">
+          <div className="mt-4 text-sm font-light">
             {formResponse && <SubmitResponse response={formResponse} />}
           </div>
         </div>
