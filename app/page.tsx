@@ -6,12 +6,11 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between">
+    <>
       <Hero />
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
-    </main>
+    </>
   );
 }

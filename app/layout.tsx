@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -18,7 +19,10 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} min-h-screen bg-darkest text-white`}>
         <Header />
-        {children}
+        <main className="flex flex-col items-center justify-between">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

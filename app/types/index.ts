@@ -10,3 +10,7 @@ export interface ProjectType {
 export interface IconProps {
   iconClass: string;
 }
+
+export interface IllustrationsProps {
+  iconClass: string;
+}
