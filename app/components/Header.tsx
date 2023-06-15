@@ -6,6 +6,11 @@ import { useEffect, useRef, useState } from "react";
 import useWindowReSize from "../hooks/useWindowResize";
 import useOnClickOutside from "../hooks/useOnOutsideClick";
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 const eagleLake = Eagle_Lake({
   subsets: ["latin"],
   weight: "400",
@@ -69,7 +74,9 @@ function Header() {
       <nav className="">
         <div
           ref={navLinkContainerRef}
-          className={`fixed left-[20%] right-0 top-0 h-screen flex justify-center items-center px-20 bg-darkest md:bg-transparent ${
+          className={`${
+            spaceGrotesk.className
+          } fixed left-[20%] right-0 top-0 h-screen flex justify-center items-center px-20 bg-darkest md:bg-transparent ${
             !isHamburgerOpen && "translate-x-full"
           } transition-transform md:relative md:block md:px-0 md:h-auto md:left-0 md:translate-x-0`}
         >

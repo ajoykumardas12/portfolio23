@@ -8,6 +8,12 @@ import ReactIcon from "../icons/skills/ReactIcon";
 import TailwindCSS from "../icons/skills/TailwindCSS";
 import TypeScript from "../icons/skills/TypeScript";
 import VSCode from "../icons/skills/VSCode";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 const skillItems = [
   { name: "JavaScript", Icon: JavaScript },
@@ -55,7 +61,7 @@ function Skills() {
       className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center"
       id="skills"
     >
-      <h2 className="section-heading mb-5">
+      <h2 className={`${spaceGrotesk.className} section-heading mb-5`}>
         <span className="text-highlight">#</span> My Skills
       </h2>
       <p className="font-light mb-4">

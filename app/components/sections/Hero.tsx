@@ -1,5 +1,11 @@
 import Link from "next/link";
 import SocialIcons from "../SocialIcons";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 function Hero() {
   return (
@@ -10,7 +16,9 @@ function Hero() {
         </div>
         <div className="text-lg leading-5 text-brand">I&apos;m,</div>
         <h1 className="text-name mb-6">AJOY KUMAR DAS</h1>
-        <p className="w-full md:w-10/12 lg:w-8/12 xl:w-7/12 font-light">
+        <p
+          className={`${spaceGrotesk.className} w-full md:w-10/12 lg:w-8/12 xl:w-7/12 font-light`}
+        >
           A full-stack developer with a strong focus on{" "}
           <span className="bg-gradient-to-r from-brand to-brand/60 bg-clip-text text-transparent font-medium">
             front-end development.
@@ -24,7 +32,7 @@ function Hero() {
           href="https://drive.google.com/file/d/1TVaILc8M4YYV24AwhdI840jc1PdbI6Jd/view?usp=sharing"
           rel="noopener noreferrer"
           target="_blank"
-          className="px-4 py-2 text-highlight text-lg border border-highlight rounded"
+          className={`${spaceGrotesk.className} px-4 py-2 text-highlight text-lg border border-highlight rounded`}
         >
           My Resume
         </Link>

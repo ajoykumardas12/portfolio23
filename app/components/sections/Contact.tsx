@@ -4,6 +4,12 @@ import emailjs from "@emailjs/browser";
 import CheckIcon from "../icons/CheckIcon";
 import InfoIcon from "../icons/InfoIcon";
 import SendIcon from "../icons/SendIcon";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 function Contact() {
   const contactForm = useRef<HTMLFormElement>(null);
@@ -38,7 +44,7 @@ function Contact() {
       className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 pb-12"
       id="contact"
     >
-      <h2 className="section-heading mb-8">
+      <h2 className={`${spaceGrotesk.className} section-heading mb-8`}>
         <span className="text-highlight">#</span> Contact
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

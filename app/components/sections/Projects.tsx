@@ -3,6 +3,12 @@ import { ProjectType } from "@/app/types";
 import Image from "next/image";
 import GitHub from "../icons/GitHub";
 import ExternalLink from "../icons/ExternalLink";
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 // TODO: Use markdown for project details
 function Projects() {
@@ -11,7 +17,7 @@ function Projects() {
       className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center"
       id="projects"
     >
-      <h2 className="section-heading mb-8">
+      <h2 className={`${spaceGrotesk.className} section-heading mb-8`}>
         <span className="text-highlight">#</span> Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -35,7 +41,11 @@ function Project(project: ProjectType) {
       />
       <div className="px-4 py-3 grow flex flex-col justify-between gap-4">
         <div className="flex flex-col">
-          <h4 className="self-center text-lg font-bold mb-2">{project.name}</h4>
+          <h4
+            className={`${spaceGrotesk.className} self-center text-lg font-bold mb-2`}
+          >
+            {project.name}
+          </h4>
           <p className="text-light/80 text-[0.9rem]">{project.description}</p>
         </div>
         <div className="flex flex-col">
