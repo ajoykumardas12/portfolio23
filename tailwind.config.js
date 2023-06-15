@@ -20,6 +20,10 @@ module.exports = {
       screens: {
         xs: "480px",
       },
+      fontFamily: {
+        inter: ["var(--inter)"],
+        space: ["var(--space_grotesk)"],
+      },
     },
   },
   plugins: [],

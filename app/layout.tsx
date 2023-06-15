@@ -1,9 +1,17 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--inter",
+});
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--space_grotesk",
+});
 
 export const metadata = {
   title: "Ajoy Kumar Das",
