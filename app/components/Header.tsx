@@ -87,12 +87,12 @@ function Header() {
               </Link>
             </li>
             <li className="nav-link">
-              <a href="#projects" onClick={navClickHamburgerClose}>
+              <a href="/#projects" onClick={navClickHamburgerClose}>
                 Projects
               </a>
             </li>
             <li className="nav-link">
-              <a href="#contact" onClick={navClickHamburgerClose}>
+              <a href="/#contact" onClick={navClickHamburgerClose}>
                 Contact
               </a>
             </li>
