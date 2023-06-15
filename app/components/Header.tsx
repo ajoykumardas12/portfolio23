@@ -49,8 +49,11 @@ function Header() {
   };
 
   const navLinkContainerRef = useRef(null);
+  const hamburgerRef = useRef(null);
 
-  useOnClickOutside(navLinkContainerRef, () => setIsHamburgerOpen(false));
+  function onClickOutside() {
+    setIsHamburgerOpen(false);
+  }
 
   return (
     <header
@@ -103,8 +106,17 @@ function Header() {
             </li>
           </ul>
         </div>
+        {/* run useOnOutsideClick hook conditionally */}
+        {isHamburgerOpen && (
+          <UseOnOutsideClickWrapper
+            refObj={navLinkContainerRef}
+            exceptionElementRef={hamburgerRef}
+            onClickOutside={onClickOutside}
+          />
+        )}
       </nav>
       <button
+        ref={hamburgerRef}
         className={`hamburger-menu md:hidden fixed z-10 ${
           isHamburgerOpen ? "hamburger-open" : ""
         }`}
@@ -118,6 +130,22 @@ function Header() {
       </button>
     </header>
   );
+}
+
+interface UseOnOutsideClickWrapperProps {
+  refObj: React.RefObject<HTMLElement>;
+  exceptionElementRef: React.RefObject<HTMLElement>;
+  onClickOutside: () => void;
+}
+// Wrapper for useOutsideClick hook to be used conditionally
+function UseOnOutsideClickWrapper({
+  refObj,
+  exceptionElementRef,
+  onClickOutside,
+}: UseOnOutsideClickWrapperProps) {
+  useOnClickOutside(refObj, exceptionElementRef, onClickOutside);
+
+  return null;
 }
 
 export default Header;
