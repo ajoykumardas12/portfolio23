@@ -1,4 +1,3 @@
-"use client";
 function printEsterEgg() {
   console.log(`
     ooooo   ooooo  o8o                            
