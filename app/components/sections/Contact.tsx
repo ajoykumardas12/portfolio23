@@ -5,6 +5,7 @@ import CheckIcon from "../icons/CheckIcon";
 import InfoIcon from "../icons/InfoIcon";
 import SendIcon from "../icons/SendIcon";
 import { Space_Grotesk } from "next/font/google";
+import printEsterEgg from "@/app/ester-egg/esterEgg";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -12,6 +13,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 function Contact() {
+  printEsterEgg();
+
   const contactForm = useRef<HTMLFormElement>(null);
   const [formResponse, setFormResponse] = useState<null | "success" | "fail">(
     null
