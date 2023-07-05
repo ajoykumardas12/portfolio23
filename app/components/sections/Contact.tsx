@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import CheckIcon from "../icons/CheckIcon";
 import InfoIcon from "../icons/InfoIcon";
@@ -13,7 +13,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 function Contact() {
-  printEsterEgg();
+  useEffect(() => {
+    printEsterEgg();
+  });
 
   const contactForm = useRef<HTMLFormElement>(null);
   const [formResponse, setFormResponse] = useState<null | "success" | "fail">(
