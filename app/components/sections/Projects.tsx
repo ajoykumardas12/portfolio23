@@ -31,14 +31,14 @@ function Projects() {
 
 function Project(project: ProjectType) {
   return (
-    <div className="flex flex-col bg-dark/40 rounded border border-brand/40 overflow-hidden">
+    <div className="flex flex-col bg-dark/40 rounded border border-brand/40 group overflow-hidden">
       <div className="overflow-hidden">
         <Image
           src={project.imageSrc}
           alt={project.name}
           width={400}
           height={400}
-          className="w-full object-cover hover:scale-110 transition-transform duration-300 rounded-t"
+          className="w-full object-cover group-hover:scale-110 transition-transform duration-300 rounded-t"
         />
       </div>
 
