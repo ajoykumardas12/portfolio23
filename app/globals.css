@@ -129,6 +129,48 @@
     width: 32px;
     height: 32px;
   }
+  .skill-card:after {
+    content: "";
+    background: linear-gradient(transparent, #01c8ef, transparent);
+    height: 30%;
+    width: 1px;
+    position: absolute;
+    right: -1px;
+    top: 80%;
+    opacity: 0;
+    transition: top 500ms ease, opacity 500ms ease;
+  }
+  .skill-card:hover:after {
+    top: 15%;
+    opacity: 100;
+  }
+  .skill-card:nth-child(1):after {
+    background: linear-gradient(transparent, #dfc716, transparent);
+  }
+  .skill-card:nth-child(2):after {
+    background: linear-gradient(transparent, #007acc, transparent);
+  }
+  .skill-card:nth-child(3):after {
+    background: linear-gradient(transparent, #53c1de, transparent);
+  }
+  .skill-card:nth-child(4):after {
+    background: linear-gradient(transparent, #000000, transparent);
+  }
+  .skill-card:nth-child(5):after {
+    background: linear-gradient(transparent, #1172b8, transparent);
+  }
+  .skill-card:nth-child(7):after {
+    background: linear-gradient(transparent, #48c500, transparent);
+  }
+  .skill-card:nth-child(8):after {
+    background: linear-gradient(transparent, #e46e01, transparent);
+  }
+  .skill-card:nth-child(9):after {
+    background: linear-gradient(transparent, #8dd35f, transparent);
+  }
+  .skill-card:nth-child(10):after {
+    background: linear-gradient(transparent, #1f9cf0, transparent);
+  }
   /* .grid-item:nth-last-child(2) {
     grid-column-start: 2;
     grid-column-end: 3;

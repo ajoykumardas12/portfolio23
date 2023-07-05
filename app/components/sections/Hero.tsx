@@ -17,13 +17,13 @@ function Hero() {
         <div className="text-lg leading-5 text-brand">I&apos;m,</div>
         <h1 className="text-name mb-6">AJOY KUMAR DAS</h1>
         <p
-          className={`${spaceGrotesk.className} w-full md:w-10/12 lg:w-8/12 xl:w-7/12 font-light`}
+          className={`${spaceGrotesk.className} w-full md:w-10/12 lg:w-8/12 xl:w-7/12 font-light hover:text-mid/10 transition-colors pointer-events-none`}
         >
           A full-stack developer with a strong focus on{" "}
-          <span className="bg-gradient-to-r from-brand to-brand/60 bg-clip-text text-transparent font-medium">
-            front-end development.
-          </span>{" "}
-          I love exploring, learning and building.
+          <span className="bg-gradient-to-r from-brand to-brand/60 bg-clip-text text-transparent font-semibold pointer-events-auto">
+            front-end development
+          </span>
+          . I love exploring, learning and building.
         </p>
         <div className="my-10">
           <SocialIcons />

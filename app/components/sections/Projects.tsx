@@ -31,14 +31,17 @@ function Projects() {
 
 function Project(project: ProjectType) {
   return (
-    <div className="flex flex-col bg-dark/40 rounded border border-brand/40">
-      <Image
-        src={project.imageSrc}
-        alt={project.name}
-        width={400}
-        height={400}
-        className="w-full object-cover rounded-t"
-      />
+    <div className="flex flex-col bg-dark/40 rounded border border-brand/40 group overflow-hidden">
+      <div className="overflow-hidden">
+        <Image
+          src={project.imageSrc}
+          alt={project.name}
+          width={400}
+          height={400}
+          className="w-full object-cover group-hover:scale-110 transition-transform duration-300 rounded-t"
+        />
+      </div>
+
       <div className="px-4 py-3 grow flex flex-col justify-between gap-4">
         <div className="flex flex-col">
           <h4
