@@ -34,11 +34,15 @@ function SocialIcons() {
           <Twitter iconClass="icon" />
         </a>
       </li>
-      {/* <li>
-        <a href="">
-          <Codepen />
+      <li>
+        <a
+          href="https://codepen.io/Akdev12"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Codepen iconClass="icon" />
         </a>
-      </li> */}
+      </li>
     </ul>
   );
 }

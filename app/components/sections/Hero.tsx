@@ -32,7 +32,7 @@ function Hero() {
           href="https://drive.google.com/file/d/1TVaILc8M4YYV24AwhdI840jc1PdbI6Jd/view?usp=sharing"
           rel="noopener noreferrer"
           target="_blank"
-          className={`${spaceGrotesk.className} px-4 py-2 text-highlight text-lg border border-highlight rounded`}
+          className={`${spaceGrotesk.className} px-4 py-2 text-highlight text-lg border border-highlight rounded hover:bg-dark transition-colors`}
         >
           My Resume
         </Link>
