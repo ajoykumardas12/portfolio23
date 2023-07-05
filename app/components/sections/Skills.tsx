@@ -79,9 +79,9 @@ function Skills() {
             return (
               <li
                 key={name}
-                className="grid-item group border border-transparent hover:border-light/40 transition duration-500"
+                className="grid-item group border border-transparent hover:border-light/40 hover:scale-[1.03] transition duration-300 skill-card relative"
               >
-                <div className="saturate-[0.45] group-hover:saturate-100">
+                <div className="saturate-[1] group-hover:saturate-100">
                   <Icon />
                 </div>
                 {name}
