@@ -27,7 +27,7 @@ function SocialIcons() {
       </li>
       <li>
         <a
-          href="https://twitter.com/AjoykrDas_"
+          href="https://twitter.com/ajoykdas"
           rel="noopener noreferrer"
           target="_blank"
         >
