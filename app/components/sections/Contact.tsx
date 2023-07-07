@@ -65,7 +65,7 @@ function Contact() {
             </a>{" "}
             regardless of the subject. I am also available on{" "}
             <a
-              href="https://twitter.com/AjoykrDas_"
+              href="https://twitter.com/ajoykdas"
               target="_blank"
               rel="noopener noreferrer"
               className="link"
