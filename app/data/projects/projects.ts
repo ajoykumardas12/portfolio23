@@ -2,6 +2,15 @@ import { ProjectType } from "@/app/types";
 
 const projects: ProjectType[] = [
   {
+    name: "Get-Palette (WIP)",
+    description:
+      "Generate beautiful color palettes from images, export color palettes in CSS or get a shareable link. Explore the community palettes, like and save your favorites.",
+    technologies: ["Next.js", "Zustand", "Shadcn UI"],
+    live: "https://getpalette.vercel.app/",
+    repo: "https://github.com/ajoykumardas12/get-palette",
+    imageSrc: "/images/projects/get-palette-screenshot.png",
+  },
+  {
     name: "QR Code Generator",
     description:
       "Generate QR codes that can include text, URLs, messages, contacts, emails and more. QR code outputs are easily customizable.",
