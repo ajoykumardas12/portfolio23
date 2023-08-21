@@ -29,7 +29,7 @@ function Hero() {
           <SocialIcons />
         </div>
         <Link
-          href="https://drive.google.com/file/d/1TVaILc8M4YYV24AwhdI840jc1PdbI6Jd/view?usp=sharing"
+          href="https://drive.google.com/file/d/1by0c7kAJPY6WHrrQXu4Nq0bXb7o67P-c/view?usp=sharing"
           rel="noopener noreferrer"
           target="_blank"
           className={`${spaceGrotesk.className} px-4 py-2 text-highlight text-lg border border-highlight rounded hover:bg-dark transition-colors`}
