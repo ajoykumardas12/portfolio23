@@ -2,7 +2,7 @@ import { ProjectType } from "@/app/types";
 
 const projects: ProjectType[] = [
   {
-    name: "Get-Palette (WIP)",
+    name: "GetPalette",
     description:
       "Generate beautiful color palettes from images, export color palettes in CSS or get a shareable link. Explore the community palettes, like and save your favorites.",
     technologies: ["Next.js", "Zustand", "Shadcn UI"],
