@@ -6,6 +6,7 @@ import InfoIcon from "../icons/InfoIcon";
 import SendIcon from "../icons/SendIcon";
 import { Space_Grotesk } from "next/font/google";
 import printEsterEgg from "@/app/ester-egg/esterEgg";
+import externalLinks from "@/app/data/constants/external-links";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -65,7 +66,7 @@ function Contact() {
             </a>{" "}
             regardless of the subject. I am also available on{" "}
             <a
-              href="https://twitter.com/ajoykdas"
+              href={externalLinks.socials.TWITTER}
               target="_blank"
               rel="noopener noreferrer"
               className="link"
@@ -74,7 +75,7 @@ function Contact() {
             </a>{" "}
             or{" "}
             <a
-              href="https://www.linkedin.com/in/ajoy-kumar-das/"
+              href={externalLinks.socials.LINKEDIN}
               target="_blank"
               rel="noopener noreferrer"
               className="link"
