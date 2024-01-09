@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SocialIcons from "../SocialIcons";
 import { Space_Grotesk } from "next/font/google";
+import externalLinks from "@/app/data/constants/external-links";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ function Hero() {
           <SocialIcons />
         </div>
         <Link
-          href="https://drive.google.com/file/d/1KVg529y9TGsqmrVJGh49vn5Gnf_BDM0j/view?usp=sharing"
+          href={externalLinks.RESUME}
           rel="noopener noreferrer"
           target="_blank"
           className={`${spaceGrotesk.className} px-4 py-2 text-highlight text-lg border border-highlight rounded hover:bg-dark transition-colors`}
