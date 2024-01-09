@@ -1,3 +1,4 @@
+import externalLinks from "../data/constants/external-links";
 import CodeSandbox from "./icons/CodeSandbox";
 import Codepen from "./icons/Codepen";
 import GitHub from "./icons/GitHub";
@@ -9,7 +10,7 @@ function SocialIcons() {
     <ul className="flex gap-10">
       <li>
         <a
-          href="https://www.linkedin.com/in/ajoy-kumar-das/"
+          href={externalLinks.socials.LINKEDIN}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -18,7 +19,7 @@ function SocialIcons() {
       </li>
       <li>
         <a
-          href="https://github.com/ajoykumardas12"
+          href={externalLinks.socials.GITHUB}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -27,7 +28,7 @@ function SocialIcons() {
       </li>
       <li>
         <a
-          href="https://twitter.com/ajoykdas"
+          href={externalLinks.socials.TWITTER}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -36,7 +37,7 @@ function SocialIcons() {
       </li>
       <li>
         <a
-          href="https://codepen.io/Akdev12"
+          href={externalLinks.socials.CODEPEN}
           rel="noopener noreferrer"
           target="_blank"
         >

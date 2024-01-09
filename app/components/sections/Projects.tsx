@@ -1,4 +1,4 @@
-import projects from "@/app/data/projects/projects";
+import projects from "@/app/data/constants/projects/projects";
 import { ProjectType } from "@/app/types";
 import Image from "next/image";
 import GitHub from "../icons/GitHub";
