@@ -5,6 +5,7 @@ import { Eagle_Lake, Space_Grotesk, Fira_Sans } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 import useWindowReSize from "../hooks/useWindowResize";
 import useOnClickOutside from "../hooks/useOnOutsideClick";
+import externalLinks from "../data/constants/external-links";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -103,7 +104,7 @@ function Header() {
             </li>
             <li className="nav-link">
               <Link
-                href="https://drive.google.com/file/d/1TVaILc8M4YYV24AwhdI840jc1PdbI6Jd/view?usp=sharing"
+                href={externalLinks.RESUME}
                 rel="noopener noreferrer"
                 target="_blank"
                 onClick={navClickHamburgerClose}
