@@ -47,20 +47,20 @@ function Contact() {
   };
   return (
     <section
-      className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 pb-12"
+      className="w-[87%] py-20 pb-12 xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12"
       id="contact"
     >
       <h2 className={`${spaceGrotesk.className} section-heading mb-8`}>
         <span className="text-highlight">#</span> Contact
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         <div className="">
           <div className="font-light">
             I am currently looking for opportunities. Feel free to contact me
             through the form here or reach me by direct email on{" "}
             <a
               href="mailto:ajoykumardas0808@gmail.com"
-              className="font-semibold text-link decoration-dashed decoration-1 underline-offset-4 underline decoration-light/40"
+              className="font-semibold text-link underline decoration-light/40 decoration-dashed decoration-1 underline-offset-4"
             >
               ajoykumardas0808@gmail.com
             </a>{" "}
@@ -99,7 +99,7 @@ function Contact() {
               name="name"
               placeholder="Name"
               autoComplete="off"
-              className="w-full px-3 py-2 bg-light/20 box-border outline-none border-2 border-transparent focus:border-brand rounded"
+              className="box-border w-full rounded border-2 border-transparent bg-light/20 px-3 py-2 outline-none focus:border-brand"
               required
             />
             <input
@@ -107,7 +107,7 @@ function Contact() {
               name="email"
               placeholder="Email"
               autoComplete="off"
-              className="w-full px-3 py-2 bg-light/20 box-border outline-none border-2 border-transparent focus:border-brand rounded"
+              className="box-border w-full rounded border-2 border-transparent bg-light/20 px-3 py-2 outline-none focus:border-brand"
               required
             />
             <textarea
@@ -115,12 +115,12 @@ function Contact() {
               id=""
               rows={3}
               placeholder="Message"
-              className="w-full resize-y max-h-44 min-h-[4rem] px-3 py-2 bg-light/20 box-border outline-none border-2 border-transparent focus:border-brand rounded"
+              className="box-border max-h-44 min-h-[4rem] w-full resize-y rounded border-2 border-transparent bg-light/20 px-3 py-2 outline-none focus:border-brand"
               required
             ></textarea>
             <button
               type="submit"
-              className="self-start px-8 py-2 flex items-center gap-2 group bg-dark hover:bg-dark/70 hover:text-brand rounded transition-colors duration-200 mt-1"
+              className="group mt-1 flex items-center gap-2 self-start rounded bg-dark px-8 py-2 transition-colors duration-200 hover:bg-dark/70 hover:text-brand"
             >
               Send
               <div>

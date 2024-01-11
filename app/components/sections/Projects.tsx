@@ -14,13 +14,13 @@ const spaceGrotesk = Space_Grotesk({
 function Projects() {
   return (
     <section
-      className="w-[87%] xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12 py-20 flex flex-col justify-center"
+      className="flex w-[87%] flex-col justify-center py-20 xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12"
       id="projects"
     >
       <h2 className={`${spaceGrotesk.className} section-heading mb-8`}>
         <span className="text-highlight">#</span> Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
         {projects.map((project: ProjectType) => {
           return <Project key={project.name} {...project} />;
         })}
@@ -31,28 +31,28 @@ function Projects() {
 
 function Project(project: ProjectType) {
   return (
-    <div className="flex flex-col bg-dark/40 rounded border border-brand/40 group overflow-hidden">
+    <div className="group flex flex-col overflow-hidden rounded border border-brand/40 bg-dark/40">
       <div className="overflow-hidden">
         <Image
           src={project.imageSrc}
           alt={project.name}
           width={400}
           height={400}
-          className="w-full object-cover group-hover:scale-110 transition-transform duration-300 rounded-t"
+          className="w-full rounded-t object-cover transition-transform duration-300 group-hover:scale-110"
         />
       </div>
 
-      <div className="px-4 py-3 grow flex flex-col justify-between gap-4">
+      <div className="flex grow flex-col justify-between gap-4 px-4 py-3">
         <div className="flex flex-col">
           <h4
-            className={`${spaceGrotesk.className} self-center text-lg font-bold mb-2`}
+            className={`${spaceGrotesk.className} mb-2 self-center text-lg font-bold`}
           >
             {project.name}
           </h4>
-          <p className="text-light/80 text-[0.9rem]">{project.description}</p>
+          <p className="text-[0.9rem] text-light/80">{project.description}</p>
         </div>
         <div className="flex flex-col">
-          <div className="self-center flex gap-10 mb-3">
+          <div className="mb-3 flex gap-10 self-center">
             {project.repo && (
               <a href={project.repo} target="_blank">
                 <GitHub iconClass="project-icon" />
@@ -64,11 +64,11 @@ function Project(project: ProjectType) {
               </a>
             )}
           </div>
-          <div className="text-light w-full flex gap-1 min-[320px]:gap-3 xs:gap-4 justify-center text-xs xs:text-sm">
+          <div className="flex w-full justify-center gap-1 text-xs text-light min-[320px]:gap-3 xs:gap-4 xs:text-sm">
             {project.technologies.map((technology) => {
               return (
                 <div
-                  className="px-2 py-1 rounded hover:bg-dark text-center"
+                  className="rounded px-2 py-1 text-center hover:bg-dark"
                   key={technology}
                 >
                   {technology}

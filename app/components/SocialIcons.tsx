@@ -1,5 +1,4 @@
 import externalLinks from "../data/constants/external-links";
-import CodeSandbox from "./icons/CodeSandbox";
 import Codepen from "./icons/Codepen";
 import GitHub from "./icons/GitHub";
 import LinkedIn from "./icons/LinkedIn";
