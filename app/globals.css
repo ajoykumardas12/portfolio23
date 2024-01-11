@@ -138,7 +138,9 @@
     right: -1px;
     top: 80%;
     opacity: 0;
-    transition: top 500ms ease, opacity 500ms ease;
+    transition:
+      top 500ms ease,
+      opacity 500ms ease;
   }
   .skill-card:hover:after {
     top: 15%;

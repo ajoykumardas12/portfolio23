@@ -63,12 +63,12 @@ function Header() {
 
   return (
     <header
-      className={`fixed z-10 w-full h-20 flex items-center justify-between px-6  lg:px-20 ${
+      className={`fixed z-10 flex h-20 w-full items-center justify-between px-6 lg:px-20 ${
         isHamburgerOpen ? "bg-darkest" : "bg-darkest/90"
-      } backdrop-blur-xl shadow-sm`}
+      } shadow-sm backdrop-blur-xl`}
     >
       <div
-        className={`${eagleLake.className} text-2xl font-bold tracking-widest text-highlight z-10 `}
+        className={`${eagleLake.className} z-10 text-2xl font-bold tracking-widest text-highlight`}
       >
         AJOY
       </div>
@@ -77,11 +77,11 @@ function Header() {
           ref={navLinkContainerRef}
           className={`${
             spaceGrotesk.className
-          } fixed left-[20%] right-0 top-0 h-screen flex justify-center items-center px-20 bg-darkest md:bg-transparent ${
+          } fixed left-[20%] right-0 top-0 flex h-screen items-center justify-center bg-darkest px-20 md:bg-transparent ${
             !isHamburgerOpen && "translate-x-full"
-          } transition-transform md:relative md:block md:px-0 md:h-auto md:left-0 md:translate-x-0`}
+          } transition-transform md:relative md:left-0 md:block md:h-auto md:translate-x-0 md:px-0`}
         >
-          <ul className="h-[55%] w-full flex flex-col justify-between items-center md:flex-row  md:gap-5 lg:gap-8 xl:gap-10 text-white/90">
+          <ul className="flex h-[55%] w-full flex-col items-center justify-between text-white/90  md:flex-row md:gap-5 lg:gap-8 xl:gap-10">
             <li className="nav-link">
               <Link href="/" onClick={navClickHamburgerClose}>
                 Home
@@ -125,7 +125,7 @@ function Header() {
       </nav>
       <button
         ref={hamburgerRef}
-        className={`hamburger-menu md:hidden fixed z-10 ${
+        className={`hamburger-menu fixed z-10 md:hidden ${
           isHamburgerOpen ? "hamburger-open" : ""
         }`}
         onClick={toggleIsHamburgerOpen}
