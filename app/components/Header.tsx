@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-import { Eagle_Lake, Space_Grotesk, Fira_Sans } from "next/font/google";
+import { Eagle_Lake, Space_Grotesk } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 import useWindowReSize from "../hooks/useWindowResize";
 import useOnClickOutside from "../hooks/useOnOutsideClick";

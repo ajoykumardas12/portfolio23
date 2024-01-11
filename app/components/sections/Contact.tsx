@@ -40,7 +40,8 @@ function Contact() {
             contactForm.current?.reset();
           }
         },
-        (error) => {
+        // error
+        () => {
           setFormResponse("fail");
         }
       );
