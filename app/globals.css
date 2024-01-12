@@ -161,16 +161,22 @@
   .skill-card:nth-child(5):after {
     background: linear-gradient(transparent, #1172b8, transparent);
   }
-  .skill-card:nth-child(7):after {
-    background: linear-gradient(transparent, #48c500, transparent);
+  .skill-card:nth-child(6):after {
+    background: linear-gradient(transparent, #cb6699, transparent);
   }
   .skill-card:nth-child(8):after {
-    background: linear-gradient(transparent, #e46e01, transparent);
+    background: linear-gradient(transparent, #48c500, transparent);
   }
   .skill-card:nth-child(9):after {
-    background: linear-gradient(transparent, #8dd35f, transparent);
+    background: linear-gradient(transparent, #e46e01, transparent);
   }
   .skill-card:nth-child(10):after {
+    background: linear-gradient(transparent, #8dd35f, transparent);
+  }
+  .skill-card:nth-child(11):after {
+    background: linear-gradient(transparent, #8e9091, transparent);
+  }
+  .skill-card:nth-child(12):after {
     background: linear-gradient(transparent, #1f9cf0, transparent);
   }
   /* .grid-item:nth-last-child(2) {

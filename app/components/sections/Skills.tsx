@@ -1,59 +1,10 @@
-import CSSIcon from "../icons/skills/CSSIcon";
-import Git from "../icons/skills/Git";
-import Java from "../icons/skills/Java";
-import JavaScript from "../icons/skills/JavaScript";
-import NextJS from "../icons/skills/NextJS";
-import NodeJS from "../icons/skills/NodeJS";
-import ReactIcon from "../icons/skills/ReactIcon";
-import TailwindCSS from "../icons/skills/TailwindCSS";
-import TypeScript from "../icons/skills/TypeScript";
-import VSCode from "../icons/skills/VSCode";
+import skillItems from "@/app/data/constants/skills";
 import { Space_Grotesk } from "next/font/google";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
-
-const skillItems = [
-  { name: "JavaScript", Icon: JavaScript },
-  {
-    name: "TypeScript",
-    Icon: TypeScript,
-  },
-  {
-    name: "React",
-    Icon: ReactIcon,
-  },
-  {
-    name: "Next.js",
-    Icon: NextJS,
-  },
-  {
-    name: "CSS",
-    Icon: CSSIcon,
-  },
-  {
-    name: "Tailwind",
-    Icon: TailwindCSS,
-  },
-  {
-    name: "Node.js",
-    Icon: NodeJS,
-  },
-  {
-    name: "Java",
-    Icon: Java,
-  },
-  {
-    name: "Git",
-    Icon: Git,
-  },
-  {
-    name: "VS Code",
-    Icon: VSCode,
-  },
-];
 
 function Skills() {
   return (
