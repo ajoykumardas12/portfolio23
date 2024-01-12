@@ -1,8 +1,9 @@
-import externalLinks from "../data/constants/external-links";
-import Codepen from "./icons/Codepen";
-import GitHub from "./icons/GitHub";
-import LinkedIn from "./icons/LinkedIn";
-import Twitter from "./icons/Twitter";
+import externalLinks from "@data/constants/external-links";
+
+import Codepen from "@components/icons/Codepen";
+import GitHub from "@components/icons/GitHub";
+import LinkedIn from "@components/icons/LinkedIn";
+import Twitter from "@components/icons/Twitter";
 
 function SocialIcons() {
   return (

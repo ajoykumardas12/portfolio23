@@ -1,9 +1,12 @@
-import projects from "@/app/data/constants/projects/projects";
 import { ProjectType } from "@/app/types";
-import Image from "next/image";
-import GitHub from "../icons/GitHub";
-import ExternalLink from "../icons/ExternalLink";
+
 import { Space_Grotesk } from "next/font/google";
+import Image from "next/image";
+
+import projects from "@data/constants/projects/projects";
+
+import ExternalLink from "@components/icons/ExternalLink";
+import GitHub from "@components/icons/GitHub";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],

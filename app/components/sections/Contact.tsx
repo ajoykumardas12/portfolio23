@@ -1,12 +1,16 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import CheckIcon from "../icons/CheckIcon";
-import InfoIcon from "../icons/InfoIcon";
-import SendIcon from "../icons/SendIcon";
-import { Space_Grotesk } from "next/font/google";
+
 import printEsterEgg from "@/app/ester-egg/esterEgg";
-import externalLinks from "@/app/data/constants/external-links";
+import emailjs from "@emailjs/browser";
+
+import { Space_Grotesk } from "next/font/google";
+import { useEffect, useRef, useState } from "react";
+
+import externalLinks from "@data/constants/external-links";
+
+import CheckIcon from "@components/icons/CheckIcon";
+import InfoIcon from "@components/icons/InfoIcon";
+import SendIcon from "@components/icons/SendIcon";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],

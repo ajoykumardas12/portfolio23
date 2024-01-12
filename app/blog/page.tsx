@@ -1,4 +1,4 @@
-import ProgressIllustration from "../components/illustrations/ProgressIllustration";
+import ProgressIllustration from "@components/illustrations/ProgressIllustration";
 
 export default function Blog() {
   return (
