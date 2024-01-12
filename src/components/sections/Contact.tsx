@@ -1,16 +1,16 @@
 "use client";
 
-import {
-  EMAILJS_KEY,
-  EMAILJS_SERVICE,
-  EMAILJS_TEMPLATE,
-} from "@/src/data/constants/environment";
 import printEsterEgg from "@/src/ester-egg/esterEgg";
 import emailjs from "@emailjs/browser";
 
 import { Space_Grotesk } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 
+import {
+  EMAILJS_KEY,
+  EMAILJS_SERVICE,
+  EMAILJS_TEMPLATE,
+} from "@data/constants/environment";
 import externalLinks from "@data/constants/external-links";
 
 import CheckIcon from "@components/icons/CheckIcon";
