@@ -14,3 +14,8 @@ export interface IconProps {
 export interface IllustrationsProps {
   iconClass: string;
 }
+
+export type SkillItemProps = {
+  name: String;
+  Icon: () => React.JSX.Element;
+};
