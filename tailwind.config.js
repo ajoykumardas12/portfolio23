@@ -24,6 +24,15 @@ module.exports = {
         inter: ["var(--inter)"],
         space: ["var(--space_grotesk)"],
       },
+      animation: {
+        disappear: "fade-out 2s 3s linear forwards",
+      },
+      keyframes: {
+        "fade-out": {
+          "0%": { opacity: "100%" },
+          "100%": { opacity: "0%" },
+        },
+      },
     },
   },
   plugins: [],

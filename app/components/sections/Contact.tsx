@@ -48,7 +48,11 @@ function Contact() {
         () => {
           setFormResponse("fail");
         }
-      );
+      )
+      .then(() => {
+        const timeout = setTimeout(() => setFormResponse(null), 5000);
+        return () => clearTimeout(timeout);
+      });
   };
   return (
     <section
@@ -149,14 +153,14 @@ type ResponseProps = {
 function SubmitResponse({ response }: ResponseProps) {
   if (response === "success") {
     return (
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 animate-disappear">
         <CheckIcon iconClass="w-5 h-5 stroke-brand" />
         <div>Message sent! I will get in touch asap.</div>
       </div>
     );
   } else {
     return (
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 animate-disappear">
         <InfoIcon iconClass="w-5 h-5 stroke-brand" />
         <div>Something went wrong :( Try again or email me directly. </div>
       </div>
