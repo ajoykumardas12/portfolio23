@@ -1,4 +1,4 @@
-import { SkillItemProps } from "@/app/types";
+import { SkillItemProps } from "@/src/types";
 
 import CSSIcon from "@components/icons/skills/CSSIcon";
 import Git from "@components/icons/skills/Git";

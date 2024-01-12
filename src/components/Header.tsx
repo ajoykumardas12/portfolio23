@@ -1,7 +1,7 @@
 "use client";
 
-import useOnClickOutside from "@/app/hooks/useOnOutsideClick";
-import useWindowReSize from "@/app/hooks/useWindowResize";
+import useOnClickOutside from "@/src/hooks/useOnOutsideClick";
+import useWindowReSize from "@/src/hooks/useWindowResize";
 
 import { Eagle_Lake, Space_Grotesk } from "next/font/google";
 import Link from "next/link";

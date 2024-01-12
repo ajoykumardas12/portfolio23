@@ -1,4 +1,4 @@
-import { ProjectType } from "@/app/types";
+import { ProjectType } from "@/src/types";
 
 import { Space_Grotesk } from "next/font/google";
 import Image from "next/image";

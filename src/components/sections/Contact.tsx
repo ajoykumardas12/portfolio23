@@ -1,6 +1,6 @@
 "use client";
 
-import printEsterEgg from "@/app/ester-egg/esterEgg";
+import printEsterEgg from "@/src/ester-egg/esterEgg";
 import emailjs from "@emailjs/browser";
 
 import { Space_Grotesk } from "next/font/google";

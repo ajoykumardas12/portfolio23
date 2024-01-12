@@ -1,4 +1,4 @@
-import { IconProps } from "@/app/types";
+import { IconProps } from "@/src/types";
 
 function Codepen({ iconClass }: IconProps) {
   return (

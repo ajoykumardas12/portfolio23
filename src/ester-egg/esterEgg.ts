@@ -17,14 +17,6 @@ function printEsterEgg() {
 
   console.log("Solve this encryption:");
   console.log(`%cEncrypted: ${encrypted}`, "font-size: 1.2rem;");
-
-  // Solution: Replace each character with the one 5 positions before in the ASCII table
-  // const decrypted = encrypted
-  //   .split("")
-  //   .map((char) => String.fromCharCode(char.charCodeAt(0) - 5))
-  //   .join("");
-
-  // console.log(`Decrypted: ${decrypted}`);
 }
 
 export default printEsterEgg;
