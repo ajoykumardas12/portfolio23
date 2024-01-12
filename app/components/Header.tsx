@@ -1,11 +1,13 @@
 "use client";
-import Link from "next/link";
+
+import useOnClickOutside from "@/app/hooks/useOnOutsideClick";
+import useWindowReSize from "@/app/hooks/useWindowResize";
 
 import { Eagle_Lake, Space_Grotesk } from "next/font/google";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import useWindowReSize from "../hooks/useWindowResize";
-import useOnClickOutside from "../hooks/useOnOutsideClick";
-import externalLinks from "../data/constants/external-links";
+
+import externalLinks from "@data/constants/external-links";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],

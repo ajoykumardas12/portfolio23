@@ -1,7 +1,9 @@
-import Link from "next/link";
-import SocialIcons from "../SocialIcons";
 import { Space_Grotesk } from "next/font/google";
-import externalLinks from "@/app/data/constants/external-links";
+import Link from "next/link";
+
+import externalLinks from "@data/constants/external-links";
+
+import SocialIcons from "@components/SocialIcons";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],

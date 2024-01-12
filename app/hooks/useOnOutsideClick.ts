@@ -1,5 +1,4 @@
 // exceptionRef ensures ignoring events on exception element outside of ref
-
 import { RefObject, useEffect } from "react";
 
 const useOnClickOutside = (
