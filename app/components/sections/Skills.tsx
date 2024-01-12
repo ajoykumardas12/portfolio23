@@ -24,13 +24,13 @@ function Skills() {
         Here are a few technologies of I enjoy working with:
       </p>
       <div className="text-[0.8rem] sm:text-[0.9rem]">
-        <ul className="grid-container">
+        <ul className="flex flex-wrap justify-center gap-4">
           {/* TODO: Centre last row items */}
           {skillItems.map(({ name, Icon }) => {
             return (
               <li
                 key={name}
-                className="grid-item skill-card group relative border border-transparent transition duration-300 hover:scale-[1.03] hover:border-light/40"
+                className="border-box skill-card group relative flex w-full min-w-[5.5rem] shrink-0 grow-0 basis-[calc(33%-1rem)] flex-col items-center justify-center gap-2 rounded-[0.3rem] border border-transparent bg-[#164e63]/10 p-[0.8rem] text-center transition duration-300 hover:scale-[1.03] hover:border-light/40 sm:basis-[22%] md:basis-2/12 2xl:basis-40"
               >
                 <div className="saturate-[1] group-hover:saturate-100">
                   <Icon />
