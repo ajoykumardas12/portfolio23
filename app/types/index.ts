@@ -1,19 +1,19 @@
-export interface ProjectType {
+export type ProjectType = {
   name: string;
   description: string;
   technologies: string[];
   live: string | null;
   repo: string | null;
   imageSrc: string;
-}
+};
 
-export interface IconProps {
+export type IconProps = {
   iconClass: string;
-}
+};
 
-export interface IllustrationsProps {
+export type IllustrationsProps = {
   iconClass: string;
-}
+};
 
 export type SkillItemProps = {
   name: String;

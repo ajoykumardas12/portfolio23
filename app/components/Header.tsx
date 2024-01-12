@@ -142,11 +142,11 @@ function Header() {
   );
 }
 
-interface UseOnOutsideClickWrapperProps {
+type UseOnOutsideClickWrapperProps = {
   refObj: React.RefObject<HTMLElement>;
   exceptionElementRef: React.RefObject<HTMLElement>;
   onClickOutside: () => void;
-}
+};
 // Wrapper for useOutsideClick hook to be used conditionally
 function UseOnOutsideClickWrapper({
   refObj,
