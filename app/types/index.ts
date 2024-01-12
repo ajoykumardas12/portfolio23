@@ -16,6 +16,6 @@ export type IllustrationsProps = {
 };
 
 export type SkillItemProps = {
-  name: String;
+  name: string;
   Icon: () => React.JSX.Element;
 };
