@@ -1,4 +1,4 @@
-import { IconProps } from "@/app/types";
+import { IconProps } from "@/src/types";
 
 function CheckIcon({ iconClass }: IconProps) {
   return (

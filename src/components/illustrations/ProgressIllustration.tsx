@@ -1,4 +1,4 @@
-import { IllustrationsProps } from "@/app/types";
+import { IllustrationsProps } from "@/src/types";
 
 function ProgressIllustration({ iconClass }: IllustrationsProps) {
   return (

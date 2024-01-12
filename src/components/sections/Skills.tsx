@@ -1,4 +1,4 @@
-import skillItems from "@/app/data/constants/skills";
+import skillItems from "@/src/data/constants/skills";
 
 import { Space_Grotesk } from "next/font/google";
 
