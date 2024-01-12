@@ -142,9 +142,9 @@ function Contact() {
   );
 }
 
-interface ResponseProps {
+type ResponseProps = {
   response: string;
-}
+};
 
 function SubmitResponse({ response }: ResponseProps) {
   if (response === "success") {

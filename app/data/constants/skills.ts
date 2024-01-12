@@ -1,3 +1,5 @@
+import { SkillItemProps } from "@/app/types";
+
 import CSSIcon from "@components/icons/skills/CSSIcon";
 import Git from "@components/icons/skills/Git";
 import GitHub from "@components/icons/skills/GitHub";
@@ -11,7 +13,7 @@ import TailwindCSS from "@components/icons/skills/TailwindCSS";
 import TypeScript from "@components/icons/skills/TypeScript";
 import VSCode from "@components/icons/skills/VSCode";
 
-const skillItems = [
+const skillItems: SkillItemProps[] = [
   { name: "JavaScript", Icon: JavaScript },
   {
     name: "TypeScript",
