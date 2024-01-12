@@ -1,3 +1,5 @@
+import { PUZZLE_STRING } from "@data/constants/environment";
+
 function printEsterEgg() {
   console.log(`
     ooooo   ooooo  o8o                            
@@ -9,7 +11,7 @@ function printEsterEgg() {
     o888o   o888o o888o     .8'      Y888""8o Y8P 
                         .o..P                  '  
                         'Y8P'                     `);
-  const puzzle = "Hello_World";
+  const puzzle = PUZZLE_STRING ?? "";
   const encrypted = puzzle
     .split("")
     .map((char) => String.fromCharCode(char.charCodeAt(0) + 5))

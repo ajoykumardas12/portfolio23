@@ -6,6 +6,11 @@ import emailjs from "@emailjs/browser";
 import { Space_Grotesk } from "next/font/google";
 import { useEffect, useRef, useState } from "react";
 
+import {
+  EMAILJS_KEY,
+  EMAILJS_SERVICE,
+  EMAILJS_TEMPLATE,
+} from "@data/constants/environment";
 import externalLinks from "@data/constants/external-links";
 
 import CheckIcon from "@components/icons/CheckIcon";
@@ -32,27 +37,27 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_znsmupm",
-        "template_th38h2k",
+        EMAILJS_SERVICE ?? "",
+        EMAILJS_TEMPLATE ?? "",
         contactForm.current!,
-        "Em3QBPXQMkjXxQuH8"
+        EMAILJS_KEY
       )
       .then(
         (result) => {
           if (result.status === 200) {
             setFormResponse("success");
             contactForm.current?.reset();
+            (() => {
+              const timeout = setTimeout(() => setFormResponse(null), 15000);
+              return () => clearTimeout(timeout);
+            })();
           }
         },
         // error
         () => {
           setFormResponse("fail");
         }
-      )
-      .then(() => {
-        const timeout = setTimeout(() => setFormResponse(null), 5000);
-        return () => clearTimeout(timeout);
-      });
+      );
   };
   return (
     <section
