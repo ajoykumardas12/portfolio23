@@ -13,6 +13,8 @@ function SocialIcons() {
           href={externalLinks.socials.LINKEDIN}
           rel="noopener noreferrer"
           target="_blank"
+          title="LinkedIn"
+          aria-label="Link to my LinkedIn"
         >
           <LinkedIn iconClass="icon" />
         </a>
@@ -22,6 +24,8 @@ function SocialIcons() {
           href={externalLinks.socials.GITHUB}
           rel="noopener noreferrer"
           target="_blank"
+          title="GitHub"
+          aria-label="Link to my GitHub"
         >
           <GitHub iconClass="icon" />
         </a>
@@ -31,6 +35,8 @@ function SocialIcons() {
           href={externalLinks.socials.TWITTER}
           rel="noopener noreferrer"
           target="_blank"
+          title="Twitter"
+          aria-label="Link to my Twitter"
         >
           <Twitter iconClass="icon" />
         </a>
@@ -40,6 +46,8 @@ function SocialIcons() {
           href={externalLinks.socials.CODEPEN}
           rel="noopener noreferrer"
           target="_blank"
+          title="Codepen"
+          aria-label="Link to my Codepen"
         >
           <Codepen iconClass="icon" />
         </a>

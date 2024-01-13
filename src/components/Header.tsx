@@ -130,6 +130,8 @@ function Header() {
         className={`hamburger-menu fixed z-10 md:hidden ${
           isHamburgerOpen ? "hamburger-open" : ""
         }`}
+        name="Hamburger"
+        aria-label="Hamburger Button"
         onClick={toggleIsHamburgerOpen}
       >
         <div
