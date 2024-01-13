@@ -47,22 +47,32 @@ function Project(project: ProjectType) {
 
       <div className="flex grow flex-col justify-between gap-4 px-4 py-3">
         <div className="flex flex-col">
-          <h4
+          <h3
             className={`${spaceGrotesk.className} mb-2 self-center text-lg font-bold`}
           >
             {project.name}
-          </h4>
+          </h3>
           <p className="text-[0.9rem] text-light/80">{project.description}</p>
         </div>
         <div className="flex flex-col">
           <div className="mb-3 flex gap-10 self-center">
             {project.repo && (
-              <a href={project.repo} target="_blank">
+              <a
+                href={project.repo}
+                target="_blank"
+                title="GitHub Repo"
+                aria-label="GitHub Repo"
+              >
                 <GitHub iconClass="project-icon" />
               </a>
             )}
             {project.live && (
-              <a href={project.live} target="_blank">
+              <a
+                href={project.live}
+                target="_blank"
+                title="Live Demo"
+                aria-label="Live Demo"
+              >
                 <ExternalLink iconClass="project-icon" />
               </a>
             )}
