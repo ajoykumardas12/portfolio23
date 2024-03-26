@@ -61,7 +61,7 @@ function Contact() {
   };
   return (
     <section
-      className="w-[87%] py-20 pb-12 xs:w-[85%] sm:w-[82%] lg:w-[76%] xl:w-8/12"
+      className="py-20 pb-12 w-full lg:w-4/5"
       id="contact"
     >
       <h2 className={`${spaceGrotesk.className} section-heading mb-8`}>
