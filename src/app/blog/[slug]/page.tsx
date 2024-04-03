@@ -5,6 +5,7 @@ import {
 } from "@/src/utils/posts";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
+import Image from "next/image";
 
 import Tag from "@components/blog/Tag";
 
@@ -58,7 +59,17 @@ export default async function BlogPost({
         <h1 className="px-4 text-center text-3xl font-bold dark:text-white">
           {post.data.title}
         </h1>
-        <div className="px-4">image</div>
+        <div className="w-full px-4">
+          {
+            <Image
+              className="aspect-video w-full rounded-md bg-neutral-200 object-contain dark:bg-neutral-800"
+              src={post.data.banner}
+              alt="banner"
+              width={600}
+              height={400}
+            />
+          }
+        </div>
         <div className="flex w-full flex-col items-center justify-between gap-1 px-4">
           <div className="w-full flex flex-row items-center justify-between">
             <p className="text-left text-sm font-light text-neutral-400">
