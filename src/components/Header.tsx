@@ -95,7 +95,7 @@ function Header() {
               </a>
             </li>
             <li className="nav-link">
-              <Link href="/blog" onClick={navClickHamburgerClose}>
+              <Link href="/blogs" onClick={navClickHamburgerClose}>
                 Blog
               </Link>
             </li>
