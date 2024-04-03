@@ -1,7 +1,8 @@
 import { getPostsData } from "@/src/utils/posts";
 
 import { Metadata } from "next";
-import Link from "next/link";
+
+import BlogPostCard from "@components/blog/BlogPostCard";
 
 export const metadata: Metadata = {
   title: "Blogs | Ajoy Kumar Das",
@@ -11,16 +12,14 @@ export default function Blog() {
   const posts = getPostsData();
 
   return (
-    <div>
-      <h1 className="text-3xl">Latest Posts</h1>
-      {posts.map((post) => {
-        const slug = post.slug;
-        return (
-          <Link key={slug} href={`/blogs/${slug}`}>
-            {slug}
-          </Link>
-        );
-      })}
+    <div className="w-10/12 mx-auto">
+      <h1 className="text-3xl mb-10">Latest Posts</h1>
+      <div className="grid grid-cols-3 gap-12 justify-items-center">
+        {posts.map((post) => {
+          const slug = post.slug;
+          return <BlogPostCard key={slug} slug={slug} />;
+        })}
+      </div>
     </div>
   );
 }
