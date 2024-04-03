@@ -16,7 +16,7 @@ export default function Blog() {
       {posts.map((post) => {
         const slug = post.slug;
         return (
-          <Link key={slug} href={`/blog/${slug}`}>
+          <Link key={slug} href={`/blogs/${slug}`}>
             {slug}
           </Link>
         );
