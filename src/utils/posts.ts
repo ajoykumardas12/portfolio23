@@ -5,14 +5,16 @@ import path from "path";
 import { PostsData } from "../types/posts";
 import { capitalizeString } from "./common";
 
-export const getPostsData = () => {
-  const slugs = readdirSync("blog-content");
+const contentsFolderName = "blog-content";
 
-  const posts: PostsData[] = slugs.map((slug) => {
-    const markdownx = readFileSync(
-      path.join("blog-content", slug, "index.mdx"),
-      "utf-8"
-    );
+export const getPostsData = () => {
+  const fileNames = readdirSync(path.join(process.cwd(), contentsFolderName));
+
+  const posts: PostsData[] = fileNames.map((fileName) => {
+    const file = path.join(process.cwd(), contentsFolderName, fileName);
+    const slug = fileName.slice(0, -4);
+
+    const markdownx = readFileSync(file, "utf-8");
     const { data } = matter(markdownx);
 
     const postMetaData = {
@@ -30,8 +32,8 @@ export const getPostsData = () => {
 };
 
 export const getPostContent = async (slug: string) => {
-  const folderName = "blog-content";
-  const file = path.join(process.cwd(), folderName, slug, "index.mdx");
+  const fileName = `${slug}.mdx`;
+  const file = path.join(process.cwd(), contentsFolderName, fileName);
   if (existsSync(file)) {
     const markdownx = readFileSync(file, "utf8");
     const matterResult = matter(markdownx);
