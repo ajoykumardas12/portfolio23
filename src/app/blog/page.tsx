@@ -1,6 +1,11 @@
 import { getPostsData } from "@/src/utils/posts";
 
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Blogs | Ajoy Kumar Das",
+};
 
 export default function Blog() {
   const posts = getPostsData();

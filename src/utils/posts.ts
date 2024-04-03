@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import path from "path";
 
 import { PostsData } from "../types/posts";
+import { capitalizeString } from "./common";
 
 export const getPostsData = () => {
   const slugs = readdirSync("blog-content");
@@ -39,4 +40,15 @@ export const getPostContent = async (slug: string) => {
   } else {
     return null;
   }
+};
+
+export const getTitleFromSlug = (slug: string) => {
+  const title = slug
+    .split("-")
+    .map((slugPart) => {
+      return capitalizeString(slugPart);
+    })
+    .join(" ");
+
+  return title;
 };

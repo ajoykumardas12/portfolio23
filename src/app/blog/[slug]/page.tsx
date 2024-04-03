@@ -1,8 +1,16 @@
-import { getPostContent, getPostsData } from "@/src/utils/posts";
+import {
+  getPostContent,
+  getPostsData,
+  getTitleFromSlug,
+} from "@/src/utils/posts";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import Tag from "@components/blog/Tag";
+
+type MetadataProps = {
+  params: { slug: string };
+};
 
 export async function generateStaticParams() {
   const posts = getPostsData();
@@ -10,6 +18,13 @@ export async function generateStaticParams() {
   return posts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({ params }: MetadataProps) {
+  const title = `${getTitleFromSlug(params.slug)} | Ajoy's blog`;
+  return {
+    title: title,
+  };
 }
 
 export default async function BlogPost({
