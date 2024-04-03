@@ -38,6 +38,9 @@ export const getPostContent = async (slug: string) => {
     const markdownx = readFileSync(file, "utf8");
     const matterResult = matter(markdownx);
     const { data, content } = matterResult;
+
+    data.readingTime = getReadingTime(content);
+
     return { data, content };
   } else {
     return null;
@@ -53,4 +56,13 @@ export const getTitleFromSlug = (slug: string) => {
     .join(" ");
 
   return title;
+};
+
+const getReadingTime = (content = "") => {
+  const plainText = content;
+  const wpm = 238; // https://wordsrated.com/reading-speed-statistics/
+  const words = plainText.trim().split(/\s+/).length;
+  const readingTime = Math.ceil(words / wpm);
+
+  return readingTime;
 };

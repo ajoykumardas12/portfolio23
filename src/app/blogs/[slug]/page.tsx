@@ -35,11 +35,6 @@ export default async function BlogPost({
 }) {
   const post = await getPostContent(params.slug);
 
-  const plainText = post ? post.content : "";
-  const wpm = 238; // https://wordsrated.com/reading-speed-statistics/
-  const words = plainText.trim().split(/\s+/).length;
-  const readingTime = Math.ceil(words / wpm);
-
   return post ? (
     <section className="flex flex-col items-center">
       <article className="my-6 flex max-w-xl flex-col items-center space-y-12 text-black dark:text-[#c7cfd9] lg:w-[58%] ">
@@ -73,7 +68,8 @@ export default async function BlogPost({
         <div className="flex w-full flex-col items-center justify-between gap-1 px-4">
           <div className="w-full flex flex-row items-center justify-between">
             <p className="text-left text-sm font-light text-neutral-400">
-              {readingTime} {readingTime != 1 ? "minutes" : "minute"} read...
+              {post.data.readingTime}{" "}
+              {post.data.readingTime != 1 ? "minutes" : "minute"} read...
             </p>
             <p className="flex-none text-right text-sm">
               Written on{" "}
