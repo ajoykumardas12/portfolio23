@@ -7,6 +7,8 @@ import { Eagle_Lake, Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+import DevFeature from "./common/DevFeature";
+
 import externalLinks from "@data/constants/external-links";
 
 const spaceGrotesk = Space_Grotesk({
@@ -94,11 +96,13 @@ function Header() {
                 Projects
               </a>
             </li>
-            <li className="nav-link">
-              <Link href="/blogs" onClick={navClickHamburgerClose}>
-                Blog
-              </Link>
-            </li>
+            <DevFeature>
+              <li className="nav-link">
+                <Link href="/blogs" onClick={navClickHamburgerClose}>
+                  Blog
+                </Link>
+              </li>
+            </DevFeature>
             <li className="nav-link">
               <Link
                 href={externalLinks.RESUME}
