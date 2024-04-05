@@ -58,7 +58,7 @@ export const getTitleFromSlug = (slug: string) => {
   return title;
 };
 
-const getReadingTime = (content = "") => {
+const getReadingTime = (content: string = ""): number => {
   const plainText = content;
   const wpm = 238; // https://wordsrated.com/reading-speed-statistics/
   const words = plainText.trim().split(/\s+/).length;
