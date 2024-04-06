@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 
 function Hero() {
   return (
-    <section className="mt-16 flex min-h-[calc(100vh-5rem)] w-[87%] items-center xs:w-[85%] sm:w-[82%] md:mt-20 lg:w-[78%] xl:w-9/12">
+    <section className="flex min-h-[calc(100vh-5rem)] items-center xl:pr-16">
       <div className="relative">
         <div className="mb-6 flex w-max rounded-r-2xl rounded-tl-2xl border border-highlight/40 bg-gradient-to-r from-brand/50 to-[#0a468b] px-4 py-1">
           <span className="text-xl font-medium md:text-2xl">नमस्ते</span>

@@ -5,7 +5,9 @@ import useWindowReSize from "@/src/hooks/useWindowResize";
 
 import { Eagle_Lake, Space_Grotesk } from "next/font/google";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
+
+import DevFeature from "./common/DevFeature";
 
 import externalLinks from "@data/constants/external-links";
 
@@ -19,6 +21,10 @@ const eagleLake = Eagle_Lake({
   weight: "400",
   variable: "--font-caveat",
 });
+
+function FallbackNavOption() {
+  return <span></span>;
+}
 
 function Header() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
@@ -94,16 +100,16 @@ function Header() {
                 Projects
               </a>
             </li>
-            <li className="nav-link">
-              <a href="/#contact" onClick={navClickHamburgerClose}>
-                Contact
-              </a>
-            </li>
-            <li className="nav-link">
-              <Link href="/blog" onClick={navClickHamburgerClose}>
-                Blog
-              </Link>
-            </li>
+            <Suspense fallback={<FallbackNavOption />}>
+              <DevFeature>
+                <li className="nav-link">
+                  <Link href="/blogs" onClick={navClickHamburgerClose}>
+                    Blog
+                  </Link>
+                </li>
+              </DevFeature>
+            </Suspense>
+
             <li className="nav-link">
               <Link
                 href={externalLinks.RESUME}
