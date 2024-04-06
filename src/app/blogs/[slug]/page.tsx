@@ -37,7 +37,7 @@ export default async function BlogPost({
 
   return post ? (
     <section className="flex flex-col items-center">
-      <article className="my-6 flex max-w-xl flex-col items-center space-y-12 text-black dark:text-[#c7cfd9] lg:w-[58%] ">
+      <article className="my-6 flex max-w-xl flex-col items-center space-y-12 text-black dark:text-light">
         <div className="flex gap-1 px-4 text-center text-sm font-light text-neutral-400">
           {post.data.tags.map(
             (tag: string, index: number, elements: string[]) => {
@@ -81,8 +81,9 @@ export default async function BlogPost({
             </p>
           </div>
         </div>
-        content:
-        <MDXRemote source={post.content} />
+        <section className="prose dark:prose-invert prose-a:text-link hover:prose-a:text-brand">
+          <MDXRemote source={post.content} />
+        </section>
       </article>
     </section>
   ) : (
