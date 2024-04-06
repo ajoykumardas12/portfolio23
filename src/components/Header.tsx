@@ -3,7 +3,7 @@
 import useOnClickOutside from "@/src/hooks/useOnOutsideClick";
 import useWindowReSize from "@/src/hooks/useWindowResize";
 
-import { Eagle_Lake, Space_Grotesk } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import { Suspense, useEffect, useRef, useState } from "react";
 
@@ -14,12 +14,6 @@ import externalLinks from "@data/constants/external-links";
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const eagleLake = Eagle_Lake({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-caveat",
 });
 
 function FallbackNavOption() {
@@ -76,9 +70,13 @@ function Header() {
       } shadow-sm backdrop-blur-xl`}
     >
       <div
-        className={`${eagleLake.className} z-10 text-2xl font-bold tracking-widest text-highlight`}
+        className={`${spaceGrotesk.className} z-10 text-2xl font-bold tracking-widest text-highlight`}
       >
-        AJOY
+        <svg height="40" width="110" xmlns="http://www.w3.org/2000/svg">
+          <text x="5" y="30" fill="none" stroke="#01c8ef" font-size="35">
+            AJOY
+          </text>
+        </svg>
       </div>
       <nav className="">
         <div
