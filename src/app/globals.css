@@ -177,22 +177,28 @@
   .skill-card:nth-child(5):after {
     --skill-color: #1172b8;
   }
-  .skill-card:nth-child(6):after {
-    --skill-color: #cb6699;
-  }
-  .skill-card:nth-child(8):after {
+  .skill-card:nth-child(7):after {
     --skill-color: #48c500;
   }
+  .skill-card:nth-child(8):after {
+    --skill-color: #000000;
+  }
   .skill-card:nth-child(9):after {
-    --skill-color: #e46e01;
+    --skill-color: #439934;
   }
   .skill-card:nth-child(10):after {
-    --skill-color: #8dd35f;
+    --skill-color: #b14564;
   }
   .skill-card:nth-child(11):after {
-    --skill-color: #8e9091;
+    --skill-color: #ffcf46;
   }
   .skill-card:nth-child(12):after {
+    --skill-color: #8dd35f;
+  }
+  .skill-card:nth-child(13):after {
+    --skill-color: #8e9091;
+  }
+  .skill-card:nth-child(14):after {
     --skill-color: #1f9cf0;
   }
 
