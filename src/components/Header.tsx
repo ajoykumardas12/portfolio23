@@ -76,7 +76,7 @@ function Header() {
         href="/"
       >
         <svg height="40" width="110" xmlns="http://www.w3.org/2000/svg">
-          <text x="5" y="30" fill="none" stroke="#01c8ef" font-size="35">
+          <text x="5" y="30" fill="none" stroke="#01c8ef" fontSize="35">
             Ajoy
           </text>
         </svg>

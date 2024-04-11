@@ -108,6 +108,38 @@
     }
   }
 
+  .frontend-animated-bg {
+    background: linear-gradient(
+      -45deg,
+      #9282ff 20%,
+      #ee7752 40%,
+      #e73c7e 60%,
+      #23a6d5 85%,
+      #23d5ab 100%
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    animation: animated-background-position 25s ease-in-out infinite;
+  }
+
+  @keyframes animated-background-position {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .skills-icon {
     width: 32px;
     height: 32px;
