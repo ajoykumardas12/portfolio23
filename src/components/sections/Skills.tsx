@@ -10,18 +10,18 @@ const spaceGrotesk = Space_Grotesk({
 function Skills() {
   return (
     <section
-      className="flex flex-col justify-center py-20 w-full lg:w-4/5"
+      className="flex flex-col justify-center py-16 sm:py-20 w-full lg:w-4/5"
       id="skills"
     >
       <h2 className={`${spaceGrotesk.className} section-heading mb-5`}>
         <span className="text-highlight">#</span> My Skills
       </h2>
-      <p className="mb-4 font-light">
+      <p className="mb-3 font-light">
         My interest in web development started with trying to edit default theme
         in blogger where I first experienced few bits of magic of CSS. Since
         then my skills have grown as I kept exploring.
       </p>
-      <p className="mb-6 text-base sm:text-lg">
+      <p className="mb-8 text-base sm:text-lg">
         Here are a few technologies of I enjoy working with:
       </p>
       <div className="text-[0.8rem] sm:text-[0.9rem]">

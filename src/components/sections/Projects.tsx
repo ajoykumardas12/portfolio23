@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 function Projects() {
   return (
     <section
-      className="flex flex-col justify-center py-20 w-full lg:w-4/5"
+      className="flex flex-col justify-center py-16 sm:py-20 w-full lg:w-4/5"
       id="projects"
     >
       <h2 className={`${spaceGrotesk.className} section-heading mb-8`}>

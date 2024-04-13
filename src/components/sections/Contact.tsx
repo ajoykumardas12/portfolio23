@@ -60,10 +60,7 @@ function Contact() {
       );
   };
   return (
-    <section
-      className="py-20 pb-12 w-full lg:w-4/5"
-      id="contact"
-    >
+    <section className="py-16 sm:py-20 pb-12 w-full lg:w-4/5" id="contact">
       <h2 className={`${spaceGrotesk.className} section-heading mb-8`}>
         <span className="text-highlight">#</span> Contact
       </h2>
