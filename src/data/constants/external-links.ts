@@ -1,6 +1,6 @@
 const externalLinks = {
   RESUME:
-    "https://drive.google.com/file/d/1tIRPxCAsR3OI1GAvvmbTmVij4jZ_c69y/view?usp=drive_link",
+    "https://drive.google.com/file/d/1hxu07eZcyGYc-uxgjJfPsohgLi5O-pH7/view",
   socials: {
     LINKEDIN: "https://www.linkedin.com/in/ajoy-kumar-das/",
     GITHUB: "https://github.com/ajoykumardas12",
