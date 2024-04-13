@@ -108,13 +108,46 @@
     }
   }
 
+  .frontend-animated-bg {
+    background: linear-gradient(
+      -45deg,
+      #9282ff 20%,
+      #ee7752 40%,
+      #e73c7e 60%,
+      #23a6d5 85%,
+      #23d5ab 100%
+    );
+    background-size: 400% 400%;
+    background-clip: text;
+    animation: animated-background-position 25s ease-in-out infinite;
+  }
+
+  @keyframes animated-background-position {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .skills-icon {
     width: 32px;
     height: 32px;
   }
   .skill-card:after {
+    --skill-color: #01c8ef;
     content: "";
-    background: linear-gradient(transparent, #01c8ef, transparent);
+    background: linear-gradient(transparent, var(--skill-color), transparent);
     height: 30%;
     width: 1px;
     position: absolute;
@@ -130,37 +163,43 @@
     opacity: 100;
   }
   .skill-card:nth-child(1):after {
-    background: linear-gradient(transparent, #dfc716, transparent);
+    --skill-color: #dfc716;
   }
   .skill-card:nth-child(2):after {
-    background: linear-gradient(transparent, #007acc, transparent);
+    --skill-color: #007acc;
   }
   .skill-card:nth-child(3):after {
-    background: linear-gradient(transparent, #53c1de, transparent);
+    --skill-color: #53c1de;
   }
   .skill-card:nth-child(4):after {
-    background: linear-gradient(transparent, #000000, transparent);
+    --skill-color: #000000;
   }
   .skill-card:nth-child(5):after {
-    background: linear-gradient(transparent, #1172b8, transparent);
+    --skill-color: #1172b8;
   }
-  .skill-card:nth-child(6):after {
-    background: linear-gradient(transparent, #cb6699, transparent);
+  .skill-card:nth-child(7):after {
+    --skill-color: #48c500;
   }
   .skill-card:nth-child(8):after {
-    background: linear-gradient(transparent, #48c500, transparent);
+    --skill-color: #000000;
   }
   .skill-card:nth-child(9):after {
-    background: linear-gradient(transparent, #e46e01, transparent);
+    --skill-color: #439934;
   }
   .skill-card:nth-child(10):after {
-    background: linear-gradient(transparent, #8dd35f, transparent);
+    --skill-color: #b14564;
   }
   .skill-card:nth-child(11):after {
-    background: linear-gradient(transparent, #8e9091, transparent);
+    --skill-color: #ffcf46;
   }
   .skill-card:nth-child(12):after {
-    background: linear-gradient(transparent, #1f9cf0, transparent);
+    --skill-color: #8dd35f;
+  }
+  .skill-card:nth-child(13):after {
+    --skill-color: #8e9091;
+  }
+  .skill-card:nth-child(14):after {
+    --skill-color: #1f9cf0;
   }
 
   @media only screen and (min-width: 480px) {

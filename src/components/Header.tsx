@@ -3,7 +3,7 @@
 import useOnClickOutside from "@/src/hooks/useOnOutsideClick";
 import useWindowReSize from "@/src/hooks/useWindowResize";
 
-import { Eagle_Lake, Space_Grotesk } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import { Suspense, useEffect, useRef, useState } from "react";
 
@@ -14,12 +14,6 @@ import externalLinks from "@data/constants/external-links";
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-});
-
-const eagleLake = Eagle_Lake({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-caveat",
 });
 
 function FallbackNavOption() {
@@ -71,21 +65,26 @@ function Header() {
 
   return (
     <header
-      className={`fixed z-10 flex h-20 w-full items-center justify-between px-6 lg:px-20 ${
+      className={`${
+        spaceGrotesk.className
+      } fixed z-10 flex h-20 w-full items-center justify-between px-6 lg:px-20 ${
         isHamburgerOpen ? "bg-darkest" : "bg-darkest/90"
       } shadow-sm backdrop-blur-xl`}
     >
-      <div
-        className={`${eagleLake.className} z-10 text-2xl font-bold tracking-widest text-highlight`}
+      <Link
+        className={"z-10 text-2xl font-bold tracking-wider text-highlight"}
+        href="/"
       >
-        AJOY
-      </div>
+        <svg height="40" width="110" xmlns="http://www.w3.org/2000/svg">
+          <text x="5" y="30" fill="none" stroke="#01c8ef" fontSize="35">
+            Ajoy
+          </text>
+        </svg>
+      </Link>
       <nav className="">
         <div
           ref={navLinkContainerRef}
-          className={`${
-            spaceGrotesk.className
-          } fixed left-[20%] right-0 top-0 flex h-screen items-center justify-center bg-darkest px-20 md:bg-transparent ${
+          className={`fixed left-[20%] right-0 top-0 flex h-screen items-center justify-center bg-darkest px-20 md:bg-transparent ${
             !isHamburgerOpen && "translate-x-full"
           } transition-transform md:relative md:left-0 md:block md:h-auto md:translate-x-0 md:px-0`}
         >

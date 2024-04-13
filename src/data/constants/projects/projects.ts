@@ -29,13 +29,13 @@ const projects: ProjectType[] = [
     imageSrc: "/images/projects/blog.png",
   },
   {
-    name: "Online Examination System",
+    name: "Internshala Company Blocker",
     description:
-      "Lead a team as a full-stack developer. Designed and developed the front-end of the platform. Played a key role in implementing various features including exam restrictions, facial recognition during login, automated marks evaluation.",
-    technologies: ["Laravel", "JavaScript", "CSS", "Python"],
+      "Faced many spam / scam internship, job posts when applying on Internshala platform. So I made an chrome extension to block posts from companies with which I had bad experience.",
+    technologies: ["JavaScript", "Chrome Extensions API", "CSS"],
     live: "",
-    repo: "",
-    imageSrc: "/images/projects/oes-screenshot.png",
+    repo: "https://github.com/ajoykumardas12/is-company-blocker",
+    imageSrc: "/images/projects/is-company-blocker.png",
   },
   {
     name: "Spyro",
@@ -47,14 +47,23 @@ const projects: ProjectType[] = [
     imageSrc: "/images/projects/spyrofit.png",
   },
   {
-    name: "WeatherLab",
+    name: "Online Examination System",
     description:
-      "Weather web app providing current weather and five day forecast for different locations using OpenWeatherMap API. Implemented city name suggestions using Teleport API, and utilized browser local storage to save user's home city, unit preferences",
-    technologies: ["JavaScript", "OpenWeatherMap API", "CSS"],
-    live: "https://weatherlab.netlify.app/",
-    repo: "https://github.com/ajoykumardas12/weather-app",
-    imageSrc: "/images/projects/weatherlab-screenshot.png",
+      "Lead a team as a full-stack developer. Designed and developed the front-end of the platform. Played a key role in implementing various features including exam restrictions, facial recognition during login, automated marks evaluation.",
+    technologies: ["Laravel", "JavaScript", "CSS", "Python"],
+    live: "",
+    repo: "",
+    imageSrc: "/images/projects/oes-screenshot.png",
   },
+  // {
+  //   name: "WeatherLab",
+  //   description:
+  //     "Weather web app providing current weather and five day forecast for different locations using OpenWeatherMap API. Implemented city name suggestions using Teleport API, and utilized browser local storage to save user's home city, unit preferences",
+  //   technologies: ["JavaScript", "OpenWeatherMap API", "CSS"],
+  //   live: "https://weatherlab.netlify.app/",
+  //   repo: "https://github.com/ajoykumardas12/weather-app",
+  //   imageSrc: "/images/projects/weatherlab-screenshot.png",
+  // },
 ];
 
 export default projects;

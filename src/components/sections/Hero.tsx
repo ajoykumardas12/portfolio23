@@ -23,7 +23,7 @@ function Hero() {
           className={`${spaceGrotesk.className} pointer-events-none w-full font-light transition-colors hover:text-mid/10 md:w-10/12 lg:w-8/12 xl:w-7/12`}
         >
           A full-stack developer with a strong focus on{" "}
-          <span className="pointer-events-auto bg-gradient-to-r from-brand to-brand/60 bg-clip-text font-semibold text-transparent">
+          <span className="pointer-events-auto bg-gradient-to-r from-brand to-brand/60 hover:frontend-animated-bg bg-clip-text font-semibold text-transparent">
             front-end development
           </span>
           . I love exploring, learning and building.
