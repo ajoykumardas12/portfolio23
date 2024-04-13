@@ -19,3 +19,8 @@ export type SkillItemProps = {
   name: string;
   Icon: () => React.JSX.Element;
 };
+
+export type YoutubeVideoProps = {
+  title: string;
+  link: string;
+};
